@@ -20,7 +20,7 @@
       arm_use_gcc_libraries="No"
       c_additional_options="-fms-extensions"
       c_preprocessor_definitions="CPU_MK64FN1M0VLL12;__START=main"
-      c_user_include_directories="./startup;./CMSIS/Include/;./CMSIS/Include/device;./FreeRTOS/config;./FreeRTOS/include;./FreeRTOS/port"
+      c_user_include_directories="./startup;./CMSIS/Include/;./CMSIS/Include/device;./FreeRTOS/config;./FreeRTOS/include;./FreeRTOS/port;./KSDK/platform/system/clock;./KSDK/platform/hal/mcg;./KSDK/platform/hal/sim;./KSDK/platform/hal/port;./KSDK/platform/hal/gpio"
       debug_register_definition_file="$(TargetsDir)/Kinetis/MK64F12_Peripherals.xml"
       gcc_entry_point="Reset_Handler"
       linker_memory_map_file="$(TargetsDir)/Kinetis/MK64FN1M0xxx12_MemoryMap.xml"
@@ -53,6 +53,8 @@
         filter=""
         path="FreeRTOS"
         recurse="Yes" />
+      <folder Name="KSDK" exclude="" filter="" path="KSDK" recurse="Yes" />
+      <file file_name="assert.c" />
     </folder>
     <folder Name="System Files">
       <file file_name="Ld/K64FN1Mxxx12_flash.ld" />
