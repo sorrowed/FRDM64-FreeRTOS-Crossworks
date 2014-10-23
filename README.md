@@ -1,4 +1,4 @@
 FRDM64-FreeRTOS-Crossworks
 ==========================
 
-Bare FreeRTOS demo on Kinetis FRDM64 platform
+FreeRTOS skeleton on Kinetis FRDM64 platform
